@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomText extends StatelessWidget {
-  const CustomText({super.key, this.text});
-  final text;
+  const CustomText({super.key, required this.text});
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +11,7 @@ class CustomText extends StatelessWidget {
       text,
       style: TextStyle(
         fontFamily: GoogleFonts.montserrat().fontFamily,
+        color: Colors.white,
       ),
     );
   }
